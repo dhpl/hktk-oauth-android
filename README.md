@@ -3,7 +3,7 @@
 Android SDK đăng nhập HKTK dành cho Kotlin và Java. SDK hiển thị login dialog,
 gọi HKTK Auth API và trả authorization code để game gửi về backend đổi token.
 
-Phiên bản hiện tại: `1.3.10`. Android tối thiểu: API 23.
+Phiên bản hiện tại: `1.3.12`. Android tối thiểu: API 23.
 
 ## Cài đặt
 
@@ -26,7 +26,7 @@ Thêm dependency vào `app/build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("vn.hktk:hktk-sdk:1.3.10")
+    implementation("vn.hktk:hktk-sdk:1.3.12")
 }
 ```
 
@@ -34,7 +34,7 @@ Với Groovy Gradle:
 
 ```gradle
 dependencies {
-    implementation "vn.hktk:hktk-sdk:1.3.10"
+    implementation "vn.hktk:hktk-sdk:1.3.12"
 }
 ```
 
@@ -81,10 +81,10 @@ HKTKSDK.showLogin(this, object : HKTKCallback {
 Với cấu hình trên, redirect URI là:
 
 ```text
-mygame://pgame-callback
+mygame://hktk-callback
 ```
 
 Backend game phải dùng nguyên văn `redirectUri` SDK trả về khi đổi code. Không
 đặt `clientSecret` trong app Android.
 
-Tài liệu đầy đủ: https://docs.hktk.vn/oauth/pgame-auth-api.html
+Tài liệu đầy đủ: https://docs.hktk.vn/oauth/hktk-auth-api.html
