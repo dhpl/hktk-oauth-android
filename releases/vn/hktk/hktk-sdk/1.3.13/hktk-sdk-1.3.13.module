@@ -1,0 +1,111 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "vn.hktk",
+    "module": "hktk-sdk",
+    "version": "1.3.13",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.9.24"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "hktk-sdk-1.3.13.aar",
+          "url": "hktk-sdk-1.3.13.aar",
+          "size": 64548,
+          "sha512": "ba68024765ae476a1835323a45863c6200855fa0f394cffce84af3ff58521aa2c3c9471c19aec9812af82766fc94badcae7c0196e0f16e014b405e2c566ee579",
+          "sha256": "38c33ed131b6f2329d3ad7101541f6c036aa868480cb0a411a1c87a997ebfade",
+          "sha1": "8dbb8c77ade8896262661de04c338b97c38f614b",
+          "md5": "5ef7debb0c3357d11b2f86a048434593"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.13.1"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "androidx.browser",
+          "module": "browser",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          }
+        },
+        {
+          "group": "org.json",
+          "module": "json",
+          "version": {
+            "requires": "20240303"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.9.24"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "hktk-sdk-1.3.13.aar",
+          "url": "hktk-sdk-1.3.13.aar",
+          "size": 64548,
+          "sha512": "ba68024765ae476a1835323a45863c6200855fa0f394cffce84af3ff58521aa2c3c9471c19aec9812af82766fc94badcae7c0196e0f16e014b405e2c566ee579",
+          "sha256": "38c33ed131b6f2329d3ad7101541f6c036aa868480cb0a411a1c87a997ebfade",
+          "sha1": "8dbb8c77ade8896262661de04c338b97c38f614b",
+          "md5": "5ef7debb0c3357d11b2f86a048434593"
+        }
+      ]
+    }
+  ]
+}
